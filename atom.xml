@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://likasi777.github.io/</id>
+    <id>http://www.likasi.top</id>
     <title>likasi777_blog</title>
-    <updated>2021-08-26T14:35:13.234Z</updated>
+    <updated>2021-08-26T14:38:13.558Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://likasi777.github.io/"/>
-    <link rel="self" href="https://likasi777.github.io/atom.xml"/>
-    <logo>https://likasi777.github.io/images/avatar.png</logo>
-    <icon>https://likasi777.github.io/favicon.ico</icon>
+    <link rel="alternate" href="http://www.likasi.top"/>
+    <link rel="self" href="http://www.likasi.top/atom.xml"/>
+    <logo>http://www.likasi.top/images/avatar.png</logo>
+    <icon>http://www.likasi.top/favicon.ico</icon>
     <rights>All rights reserved 2021, likasi777_blog</rights>
     <entry>
         <title type="html"><![CDATA[Java注解和反射学习笔记]]></title>
-        <id>https://likasi777.github.io/post/java注解反射/</id>
-        <link href="https://likasi777.github.io/post/java注解反射/">
+        <id>http://www.likasi.top/post/java注解反射/</id>
+        <link href="http://www.likasi.top/post/java注解反射/">
         </link>
         <updated>2021-08-26T14:21:32.000Z</updated>
         <content type="html"><![CDATA[<h1 id="java注解和反射学习笔记">Java注解和反射学习笔记</h1>
@@ -459,8 +459,8 @@ class Student1{
     </entry>
     <entry>
         <title type="html"><![CDATA[ Fern WIFI Cracker简单使用]]></title>
-        <id>https://likasi777.github.io/post/fern-wifi-cracker-jian-dan-shi-yong/</id>
-        <link href="https://likasi777.github.io/post/fern-wifi-cracker-jian-dan-shi-yong/">
+        <id>http://www.likasi.top/post/fern-wifi-cracker-jian-dan-shi-yong/</id>
+        <link href="http://www.likasi.top/post/fern-wifi-cracker-jian-dan-shi-yong/">
         </link>
         <updated>2021-07-20T14:32:15.000Z</updated>
         <content type="html"><![CDATA[<h1 id="fern-wifi-cracker简单使用">Fern WIFI Cracker简单使用</h1>
@@ -512,8 +512,8 @@ class Student1{
     </entry>
     <entry>
         <title type="html"><![CDATA[github+gridea搭建个人博客]]></title>
-        <id>https://likasi777.github.io/post/githubgridea-da-jian-ge-ren-bo-ke/</id>
-        <link href="https://likasi777.github.io/post/githubgridea-da-jian-ge-ren-bo-ke/">
+        <id>http://www.likasi.top/post/githubgridea-da-jian-ge-ren-bo-ke/</id>
+        <link href="http://www.likasi.top/post/githubgridea-da-jian-ge-ren-bo-ke/">
         </link>
         <updated>2021-07-13T13:34:44.000Z</updated>
         <content type="html"><![CDATA[<h1 id="githubgridea搭建个人博客">github+gridea搭建个人博客</h1>
