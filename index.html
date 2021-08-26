@@ -1,168 +1,1636 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="">
+<meta name="theme-color" content="#000">
 <title>likasi777_blog</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1629993244019">
+<link rel="stylesheet" href="/media/css/gemini.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="/media/hljs/styles/monokai-sublime.css"
+  rel="stylesheet">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://likasi777.github.io//favicon.ico?v=1629988764846">
-<link rel="stylesheet" href="https://likasi777.github.io//styles/main.css">
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="">
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
     
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://likasi777.github.io/">
-        <img src="https://likasi777.github.io//images/avatar.png?v=1629988764846" class="site-logo">
-        <h1 class="site-title">likasi777_blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
       </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>likasi777_blog</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">记录学习，生活</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item nav-item-active">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友情链接
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://likasi777.github.io//atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
+  </header>
 </div>
 
+<script type="text/javascript"> 
+ 
+  let showNav = true;
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://likasi777.github.io/post/java注解反射/">
-                  <h2 class="post-title">Java注解和反射学习笔记</h2>
-                </a>
-                <div class="post-date">
-                  2021-08-26
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://likasi777.github.io/post/fern-wifi-cracker-jian-dan-shi-yong/">
-                  <h2 class="post-title"> Fern WIFI Cracker简单使用</h2>
-                </a>
-                <div class="post-date">
-                  2021-07-20
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://likasi777.github.io/post/githubgridea-da-jian-ge-ren-bo-ke/">
-                  <h2 class="post-title">github+gridea搭建个人博客</h2>
-                </a>
-                <div class="post-date">
-                  2021-07-13
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
 
-          <div class="pagination-container">
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout gemini ">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">likasi</p>
+    
+    <div class="site-description right-motion">
+      
+      
+      
+        <p>希望学到自己想学的东西，好好生活！</p>
+      
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name language" data-lan="category">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
   
   
+
+
+
 </div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box gemini">
+          <section class="section  posts-expand slide-down-in">
+            
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://likasi777.github.io/post/java注解反射/">
+      Java注解和反射学习笔记
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2021-08-26 22:21:32">2021-08-26</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
+      
+      
+      <a href="https://likasi777.github.io/tag/tZmDk61xX/">
+        <span>java</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>11<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>2436<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+  </div>
+</section>
+      <div class="post-body">
+        
+        
+          
+            <!-- 没有手动摘要切开启了自动摘要,则根据配置筛除摘要内容 -->
+            
+            
+              
+              
+              
+            
+            
+              <p><h1 id="java注解和反射学习笔记">Java注解和反射学习笔记</h1>
 
+                
+              <p>
+            
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn language" data-lan="read-more" href="https://likasi777.github.io/post/java注解反射/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://likasi777.github.io/post/fern-wifi-cracker-jian-dan-shi-yong/">
+       Fern WIFI Cracker简单使用
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2021-07-20 22:32:15">2021-07-20</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
+      
+      
+      <a href="https://likasi777.github.io/tag/p55RvVTaV/">
+        <span>wifi</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>2<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>436<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+  </div>
+</section>
+      <div class="post-body">
+        
+        
+          
+            <!-- 没有手动摘要切开启了自动摘要,则根据配置筛除摘要内容 -->
+            
+            
+              
+              
+              
+            
+            
+              <p><h1 id="fern-wifi-cracker简单使用">Fern WIFI Cracker简单使用</h1>
+
+                
+              <p>
+            
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn language" data-lan="read-more" href="https://likasi777.github.io/post/fern-wifi-cracker-jian-dan-shi-yong/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://likasi777.github.io/post/githubgridea-da-jian-ge-ren-bo-ke/">
+      github+gridea搭建个人博客
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2021-07-13 21:34:44">2021-07-13</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
+      
+      
+      <a href="https://likasi777.github.io/tag/yhNDrLafP/">
+        <span>Gridea</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>3<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>704<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+  </div>
+</section>
+      <div class="post-body">
+        
+        
+          
+            <!-- 没有手动摘要切开启了自动摘要,则根据配置筛除摘要内容 -->
+            
+            
+              
+              
+              
+            
+            
+              <p><h1 id="githubgridea搭建个人博客">github+gridea搭建个人博客</h1>
+
+                
+              <p>
+            
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn language" data-lan="read-more" href="https://likasi777.github.io/post/githubgridea-da-jian-ge-ren-bo-ke/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+  
+            
+            
+<div class="page bg-color">
+  <ul class="pagination-ul">
+    
+    
+      
+        <li class="pagination-li pagination-active">
+            <a href="/page/../">
+              1
+            </a>
+        </li>
+      
+    
+    
+  </ul>
+</div>
+          </section>
         </div>
       </div>
     </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <span id="busuanzi_container_site_pv">浏览数 <span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"></span> 人</span>
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+  <div class="bg-img">
+    <img src="\media\images\custom-bgImg.jpg" />
+  </div>
+  
+  
+  
+  
+</div>
+<script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+    back2TopText = document.querySelector('#back_to_top_text'),
+    drawerBox = document.querySelector('#drawer_box'),
+    rightSideBar = document.querySelector('.sidebar'),
+    viewport = document.querySelector('body');
 
-AOS.init();
+  function scrollAnimation(currentY, targetY) {
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener('scroll', function (e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+
+  let hasCacu = false;
+  window.addEventListener('resize', function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, 'stop');
+      jQuery.Velocity(viewport, 'stop');
+      jQuery.Velocity(rightMotions, 'stop');
+      if (open) {
+        jQuery.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            jQuery.Velocity(rightMotions, transitionDir, {});
+          }
+        })
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME
+        });
+      } else {
+        jQuery.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            jQuery.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target", "_blank");
+      }
+    })
+  }
+
+  let faSearch = document.querySelector('#fa_search');
+  faSearch && faSearch.addEventListener('click', function () {
+    document.querySelector('#search_mask').style = ''
+  })
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+  
+  // 离开当前页title变化
+  var leaveTitle = "";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
 
 </script>
 
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll('.section img');
+  images.forEach(image => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement('a');
+    aelem.href = image.src;
+    aelem.dataset['fancybox'] = 'images';
+    aelem.dataset['rel'] = 'fancybox-button';
+    aelem.classList.add('fancybox');
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  })
+</script>
+
+  </div>
+</body>
+
+<div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://likasi777.github.io/post/java注解反射/"" data-c="
+          &lt;h1 id=&#34;java注解和反射学习笔记&#34;&gt;Java注解和反射学习笔记&lt;/h1&gt;
+&lt;h2 id=&#34;1什么是注解&#34;&gt;1.什么是注解&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Annotation是从JDK5.0开始引入的新技术&lt;/li&gt;
+&lt;li&gt;作用：可以被其他程序（比如编译器等）读取&lt;/li&gt;
+&lt;li&gt;格式：@注释名，还可以添加一些参数值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;内置注解&#34;&gt;内置注解：&lt;/h4&gt;
+&lt;p&gt;@Override 重写&lt;/p&gt;
+&lt;p&gt;@Deprecated 不推荐使用，但是可以使用，或者存在更好的方式&lt;/p&gt;
+&lt;p&gt;@SuppressWarning 镇压警告  @SuppressWarning(&amp;quot;all&amp;quot;)镇压所有警告&lt;/p&gt;
+&lt;h4 id=&#34;元注解&#34;&gt;元注解：&lt;/h4&gt;
+&lt;p&gt;作用就是负责注解其他注解&lt;/p&gt;
+&lt;p&gt;@Target:表示注解的使用范围，可以用在哪些地方&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;//测试元注解
+@MyAnnotation
+public class Test01 {
+    @MyAnnotation
+    public void test(){
+
+    }
+}
+
+//定义一个注解
+//Target表示我们的注解可以用在哪些地方
+@Target(value ={ElementType.METHOD,ElementType.TYPE})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;@Retention（保留的意思）:表示注解的生命周期，在什么地方还有效, &lt;strong&gt;runtime&amp;gt;class&amp;gt;source&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;//Retention表示我们的注解在什么地方还有效 runtime&amp;gt;class&amp;gt;source
+@Retention(value = RetentionPolicy.RUNTIME)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;@Documentted:表示是否将我们注解生成在javadoc中&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;//Documented表示是否将我们的注解生成在javadoc中
+@Documented
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;@Inherited:表示子类可继续父类的注解&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;//Inherited表示子类可继承父类的注解
+@Inherited
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;自定义注解&#34;&gt;自定义注解：&lt;/h4&gt;
+&lt;p&gt;使用@interface自定义注解&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;//自定义注解
+public class Test02 {
+    //注解可以显示赋值，如果没有默认值，就必须为其赋值
+    @MyAnnotation1()
+    public void test1(){}
+    @MyAnnotation3(&amp;quot;侬好&amp;quot;)//当自定义注解里面只有一个参数，并且是value时才可以直接写
+    public void test2(){}
+}
+
+@Target({ElementType.TYPE,ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+@interface MyAnnotation1{
+    //注解的参数：参数类型+参数名（）；
+    String name() default &amp;quot;&amp;quot;;
+    int age() default 18;
+    int id() default -1;//如果默认值为-1代表不存在
+    String[] shcool() default {&amp;quot;清华大学&amp;quot;};
+}
+@Target({ElementType.TYPE,ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+@interface MyAnnotation3{
+    String value();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;2什么是反射&#34;&gt;2.什么是反射&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;动态语言：&lt;strong&gt;运行时可以改变其结构的语言&lt;/strong&gt;，比如JavaScript，php，python&lt;/p&gt;
+&lt;p&gt;静态语言：运行时结构不可改变，比如java，c，c++&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;概念&#34;&gt;概念：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reflection(反射)是java语言被视为动态语言的关键，&lt;strong&gt;反射机制允许程序在执行期借助于Reflection API取得任何类的内部信息，并能直接操作任意对象的内部属性及方法&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加载完类之后，在堆内存的方法区中就产生了一个Class类型的对象(一个类只有一个Class对象)，这个对象就包含了完整的类的结构信息。我们可以通过这个对象看到类的结构，这就是反射。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;优点&#34;&gt;优点：&lt;/h4&gt;
+&lt;p&gt;实现动态创建对象和编译，灵活性&lt;/p&gt;
+&lt;h4 id=&#34;缺点&#34;&gt;缺点：&lt;/h4&gt;
+&lt;p&gt;对性能有影响，使用&lt;strong&gt;反射基本上是一种解释操作&lt;/strong&gt;，我们告诉JVM，我们希望做什么并且它满足我们的需求，比直接执行相同的操作慢。&lt;/p&gt;
+&lt;h4 id=&#34;反射相关的主要api&#34;&gt;反射相关的主要API：&lt;/h4&gt;
+&lt;p&gt;java.lang.Class:代表一个类&lt;/p&gt;
+&lt;p&gt;java.lang.reflect.Method:代表类的方法&lt;/p&gt;
+&lt;p&gt;java.lang.reflect.Field:代表类的成员变量&lt;/p&gt;
+&lt;p&gt;java.lang.reflect.Constructor:代表类的构造器&lt;/p&gt;
+&lt;h4 id=&#34;class类&#34;&gt;Class类：&lt;/h4&gt;
+&lt;p&gt;Class类是Reflection的根源，针对任何你想动态加载、运行的类，要先获得相应的Class对象。&lt;/p&gt;
+&lt;h4 id=&#34;获取class类的实例&#34;&gt;获取Class类的实例：&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;通过对象获取（getClass）&lt;/li&gt;
+&lt;li&gt;通过类名获取&lt;/li&gt;
+&lt;li&gt;通过类名.class获取&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package test;
+//测试Class类的创建方式有哪些
+public class Test04 {
+    public static void main(String[] args) throws ClassNotFoundException {
+        Person person=new Student();
+        System.out.println(&amp;quot;这个人是&amp;quot;+person.name);
+        //方式一，通过对象获得
+        Class c1=person.getClass();
+        System.out.println(c1.hashCode());
+        //方式二，通过forname获得
+        Class c2=Class.forName(&amp;quot;test.Student&amp;quot;);
+        System.out.println(c2.hashCode());
+        //方式三，通过类名.class
+        Class c3=Student.class;
+
+        //获得父类类型
+        Class c4= c1.getSuperclass();
+        System.out.println(c4);
+    }
+}
+class Person{
+    public String name;
+
+    public Person() {
+    }
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return &amp;quot;Person{&amp;quot; +
+                &amp;quot;name=&#39;&amp;quot; + name + &#39;\&#39;&#39; +
+                &#39;}&#39;;
+    }
+}
+
+class Student extends Person{
+    public Student(){
+        this.name=&amp;quot;学生&amp;quot;;
+    }
+}
+
+class Teacher extends Person{
+    public Teacher(){
+        this.name=&amp;quot;老师&amp;quot;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;哪些类型可以有class对象&#34;&gt;哪些类型可以有Class对象？&lt;/h4&gt;
+&lt;p&gt;class：外部类，成员，局部内部类，匿名内部类&lt;/p&gt;
+&lt;p&gt;interface：接口&lt;/p&gt;
+&lt;p&gt;[]：数组&lt;/p&gt;
+&lt;p&gt;enum：枚举&lt;/p&gt;
+&lt;p&gt;annotation：注解&lt;/p&gt;
+&lt;p&gt;基本数据类型&lt;/p&gt;
+&lt;p&gt;void&lt;/p&gt;
+&lt;h4 id=&#34;java内存分析&#34;&gt;java内存分析&lt;/h4&gt;
+&lt;p&gt;java内存：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;堆内存：
+&lt;ul&gt;
+&lt;li&gt;存放new的对象和数组&lt;/li&gt;
+&lt;li&gt;可以被所有的线程共享，不会存放别的对象引用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;栈内存
+&lt;ul&gt;
+&lt;li&gt;存放基本变量类型（会包括这个基本类型的具体数值）&lt;/li&gt;
+&lt;li&gt;引用对象的变量（会存放这个引用在堆里面的具体地址）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;方法区
+&lt;ul&gt;
+&lt;li&gt;可以被所有的线程共享&lt;/li&gt;
+&lt;li&gt;包含了所有的class和static变量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;类的加载与classloader的理解&#34;&gt;类的加载与ClassLoader的理解&lt;/h4&gt;
+&lt;p&gt;加载：&lt;/p&gt;
+&lt;p&gt;链接：&lt;/p&gt;
+&lt;p&gt;初始化：&lt;/p&gt;
+&lt;h4 id=&#34;什么时候会发生类初始化&#34;&gt;什么时候会发生类初始化？&lt;/h4&gt;
+&lt;p&gt;类的主动引用：一定会发生类的初始化&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;虚拟机启动，先初始化main方法所在的类&lt;/li&gt;
+&lt;li&gt;new一个类的对象&lt;/li&gt;
+&lt;li&gt;调用类的静态成员和静态方法&lt;/li&gt;
+&lt;li&gt;使用java.lang.reflect包的方法对类进行反射调用&lt;/li&gt;
+&lt;li&gt;当初始化一个类时，其父类没有被初始化，则会先初始化它的父类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;类的被动引用：不会发生类的初始化&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当访问静态域时，只有真正声明这个域的类才会被初始化，例如：当子类引用父类的静态变量，不会导致子类初始化&lt;/li&gt;
+&lt;li&gt;通过数组定义类引用，不会触发此类的初始化&lt;/li&gt;
+&lt;li&gt;引用常量不会触发此类的初始化（常量和静态变量在连接阶段就存入调用类的常量池中了）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;类加载器&#34;&gt;类加载器&lt;/h4&gt;
+&lt;p&gt;概念：类加载器作用是用来把类(class)装载进内存的，有引导类加载器，扩展类加载器，系统类加载器&lt;/p&gt;
+&lt;h4 id=&#34;获取运行时类的完整结构&#34;&gt;获取运行时类的完整结构&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
+public class Test06 {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, NoSuchMethodException {
+        Class c1 = Class.forName(&amp;quot;test.User&amp;quot;);
+
+        //获取类名
+        System.out.println(c1.getName());//类名+包名
+        System.out.println(c1.getSimpleName());
+        //获得类的属性
+        Field[] fields = c1.getFields();//只能找到public属性
+
+        fields = c1.getDeclaredFields();//获得全部属性
+        for (Field field : fields) {
+            System.out.println(field);
+        }
+        //获得类的指定属性
+        Field age = c1.getDeclaredField(&amp;quot;age&amp;quot;);
+        System.out.println(age);
+
+        //获得类的方法
+        c1.getMethods();//获取本类及其父类的所有的方法
+        c1.getDeclaredMethods();//获得本类所有的方法
+
+        //获得指定的方法
+        //因为java重载，所以还要指定类型，不然识别不了是哪个方法
+        Method getName = c1.getMethod(&amp;quot;getName&amp;quot;, null);
+        Method setName = c1.getMethod(&amp;quot;setName&amp;quot;, String.class);
+
+        //获得构造器
+        c1.getConstructors();//获得public的构造器
+        c1.getDeclaredConstructors();
+        
+        //获得指定的构造器
+        c1.getConstructor(String.class,int.class,int.class);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;有了class对象能做什么&#34;&gt;有了Class对象，能做什么？&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;通过反射创建对象
+&lt;ul&gt;
+&lt;li&gt;newInstance    //本质是调用了类的无参构造器&lt;/li&gt;
+&lt;li&gt;通过构造器创建对象  //调用了有参构造方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通过反射调用普通方法   //getDeclaredMethod   //invoke(对象,&amp;quot;方法的值&amp;quot;)&lt;/li&gt;
+&lt;li&gt;通过反射操作属性    //getDeclaredField&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+//通过反射动态创建对象
+public class Test07 {
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
+        //获得Class对象
+        Class c1 = Class.forName(&amp;quot;test.User&amp;quot;);
+
+        //构造一个对象
+        //本质是调用了类的无参构造器
+        User user = (User) c1.newInstance();
+
+        //通过构造器创建对象
+        // 调用了有参构造方法
+        Constructor constructor = c1.getDeclaredConstructor(String.class, int.class, int.class);
+        User user1 = (User) constructor.newInstance(&amp;quot;大白&amp;quot;, 18, 001);
+        System.out.println(user1);
+
+        //通过反射调用普通方法
+        //invoke(对象,&amp;quot;方法的值&amp;quot;)
+        User user2 = (User) c1.newInstance();
+        Method setName= c1.getDeclaredMethod(&amp;quot;setName&amp;quot;, String.class);
+        setName.invoke(user2,&amp;quot;反射&amp;quot;);
+        System.out.println(user2.getName());
+
+        //通过反射操作属性
+        User user3 = (User) c1.newInstance();
+        Field name = c1.getDeclaredField(&amp;quot;name&amp;quot;);
+        //不能直接操作私有属性，我们需要关闭程序的安全检测
+        name.setAccessible(true);
+        name.set(user3,&amp;quot;反射操作属性&amp;quot;);
+        System.out.println(user3.getName());
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;性能检测&#34;&gt;性能检测：&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+//分析性能
+public class Test08 {
+    public static void test01(){
+        //普通方式调用
+        User user=new User();
+        long start=System.currentTimeMillis();
+
+        for (int i = 0; i &amp;lt; 1000; i++) {
+            user.getName();
+        }
+
+        long end=System.currentTimeMillis();
+        System.out.println(&amp;quot;普通方式执行时间:&amp;quot;+(end-start));
+    }
+
+    //反射方式调用
+    public static void test02() throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        //普通方式调用
+        Class c1= Class.forName(&amp;quot;test.User&amp;quot;);
+        User user= (User) c1.newInstance();
+        long start=System.currentTimeMillis();
+        Method getName= c1.getDeclaredMethod(&amp;quot;getName&amp;quot;);
+        for (int i = 0; i &amp;lt; 1000; i++) {
+           getName.invoke(user,null);
+        }
+
+        long end=System.currentTimeMillis();
+        System.out.println(&amp;quot;反射执行时间:&amp;quot;+(end-start));
+    }
+
+    //反射调用，关闭检测
+    public static void test03() throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        //普通方式调用
+        Class c1= Class.forName(&amp;quot;test.User&amp;quot;);
+        User user= (User) c1.newInstance();
+        long start=System.currentTimeMillis();
+        Method getName= c1.getDeclaredMethod(&amp;quot;getName&amp;quot;);
+        getName.setAccessible(true);
+        for (int i = 0; i &amp;lt; 100000000; i++) {
+            getName.invoke(user,null);
+        }
+
+        long end=System.currentTimeMillis();
+        System.out.println(&amp;quot;反射执行(关闭检测)时间:&amp;quot;+(end-start));
+    }
+
+    public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchMethodException {
+        test01();
+        test02();
+        test03();
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;反射读取注解&#34;&gt;反射读取注解&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package test;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+//反射操作注解
+public class Test10 {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException {
+      Class c1=Class.forName(&amp;quot;test.Student1&amp;quot;);
+      //通过反射获取注解
+      c1.getAnnotations();
+
+      //获取注解的value值
+        Table table= (Table) c1.getAnnotation(Table.class);
+        String value= table.value();
+        System.out.println(value);
+
+        //获得类指定的注解
+       java.lang.reflect.Field f= c1.getDeclaredField(&amp;quot;name&amp;quot;);
+        Field annotation = f.getAnnotation(Field.class);
+        annotation.columnName();
+        annotation.type();
+        annotation.length();
+
+    }
+}
+
+
+@Table(&amp;quot;db_stydent&amp;quot;)
+class Student1{
+    @Field(columnName = &amp;quot;db_id&amp;quot;,type = &amp;quot;int&amp;quot;,length = 10)
+    private int id;
+    @Field(columnName = &amp;quot;db_age&amp;quot;,type = &amp;quot;int&amp;quot;,length = 10)
+    private int age;
+    @Field(columnName = &amp;quot;db_name&amp;quot;,type = &amp;quot;varchar&amp;quot;,length = 10)
+    private String name;
+
+    public Student1() {
+    }
+
+    public Student1(int id, int age, String name) {
+        this.id = id;
+        this.age = age;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+//类名的注解
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@interface Table{
+    String value();
+}
+
+//属性的注解
+@Target(ElementType.FIELD)
+@Retention(RetentionPolicy.RUNTIME)
+@interface Field{
+    String columnName();
+    String type();
+    int length();
+}
+&lt;/code&gt;&lt;/pre&gt;
+">Java注解和反射学习笔记</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://likasi777.github.io/post/fern-wifi-cracker-jian-dan-shi-yong/"" data-c="
+          &lt;h1 id=&#34;fern-wifi-cracker简单使用&#34;&gt;Fern WIFI Cracker简单使用&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;简介：使用kali自带的fern wifi cracker利用字典破解弱密码的WIFI。&lt;/p&gt;
+&lt;p&gt;优点：可以自定义虚拟MAC地址，以便隐藏真实的MAC地址。图形界面操作简单。&lt;/p&gt;
+&lt;p&gt;缺点：强制断开用户时候有时要要求用户连接多次（容易造成用户警惕），而且破解成功与否主要靠的就是字典。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;前言&#34;&gt;前言：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;由于当时手机没有流量，周围的wifi万能钥匙有破解不了，所以当时就想着能不能用kali破解wifi，然后去网上看了有关的帖子，然后后淘宝买了一个可以监听的无线网卡。用系统自带的字典试了几次后，发现字典不行，于是网上随便下个了字典，刚好运气好，遇到弱密码，破解成功。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;步骤&#34;&gt;步骤：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;需要一个可以监听的网卡，电脑没有的话淘宝可以买一个（不贵，二三十块）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在kali里面打开fern wifi cracker，它是一个图形界面的工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择网卡（即我们插入的网卡）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在ToolBox中，WIFI Attack Options设置虚拟MAC地址。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scan for Access ponits，然后点开WPA，选择目标WiFi，点击Browse选择字典文件，Attack开始破解。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;字典路径：/usr/share/fern-WIFI-cracker/extras/wordlists/common.txt（破解成功与否主要靠的就是字典）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;截图&#34;&gt;截图：&lt;/h3&gt;
+&lt;p&gt;​ 打开fern wifi  cracker操作界面&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://gitee.com/likasi/img/raw/master/img/wifi1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;破解成功，并且经测试连接成功&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://gitee.com/likasi/img/raw/master/img/wifi2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://gitee.com/likasi/img/raw/master/img/wifi3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;总结&#34;&gt;总结：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fern wifi cracker是一个图形界面的工具，操作简单，破解成功与否跟字典有直接关系，需要有一个很全而且又好的字典，还要目标wifi密码强度不高破解成功的几率才打。&lt;/li&gt;
+&lt;/ul&gt;
+"> Fern WIFI Cracker简单使用</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://likasi777.github.io/post/githubgridea-da-jian-ge-ren-bo-ke/"" data-c="
+          &lt;h1 id=&#34;githubgridea搭建个人博客&#34;&gt;github+gridea搭建个人博客&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://gitee.com/likasi/img/raw/master/img/gridea.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;用github、gridea搭建个人博客，以及用gitee、picgo搭建图床。&lt;/p&gt;
+&lt;h2 id=&#34;搭建个人博客&#34;&gt;搭建个人博客&lt;/h2&gt;
+&lt;h3 id=&#34;github&#34;&gt;GitHub&lt;/h3&gt;
+&lt;p&gt;1.创建GitHub账号，https://githu.com 每个GitHub账号有一个免费的GitHub pages。&lt;/p&gt;
+&lt;p&gt;2.创建仓库，仓库名称为固定格式：xxx.github.io&lt;/p&gt;
+&lt;p&gt;3.创建完仓库，点击设置，找到GitHub pages ，找到Your site is published at https://xxx.github.io&lt;/p&gt;
+&lt;p&gt;4.创建token，在设置里面找到个人设置，再找到开发者设置，找到最后的personal access tokens——&amp;gt;generate new token ——&amp;gt;填写note——&amp;gt;勾选repo——&amp;gt;generate token，复制这个token待会gridea里面用到。&lt;/p&gt;
+&lt;h3 id=&#34;gridea&#34;&gt;Gridea&lt;/h3&gt;
+&lt;p&gt;1.下载安装：https://gridea.dev ，如果没有看到默认的两篇文章，重新安装。&lt;/p&gt;
+&lt;p&gt;2.配置相关信息：找到远程，选择GitHub pages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;域名：xxx.github.io/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;仓库名称：xxx.github.io&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;分支：main&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;仓库用户名：xxx&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;邮箱：注册github的邮箱&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;令牌：刚刚github创建token时保存的token&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CNAME：可填可不填&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;先点击保存，再点击检测远程连接，可以先点预览在本地看看，然后点击同步（如果同步失败的话，翻下墙再同步就好了）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3.其他配置：点击主题可以修改主题、网站名称、网页图标、头像配置等等的。&lt;/p&gt;
+&lt;h3 id=&#34;gitalk&#34;&gt;Gitalk&lt;/h3&gt;
+&lt;p&gt;1.开启gitalk评论系统，在https://github.com/settings/applications/new注册应用。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Application name&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Gridea_gitalk（自定义）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Homepage URL&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;https://cyberlisa.github.io/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Application description&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;可不填&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Authorization callback URL&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;https://cyberlisa.github.io/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;填写后点击【Register application】，会得到【Client ID】和【Client Secret】。&lt;/p&gt;
+&lt;p&gt;打开Gridea客户端——&amp;gt;配置——&amp;gt;评论配置——&amp;gt;Platform（选中Gitalk）——&amp;gt;开启按钮——&amp;gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Client ID&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Client Secret&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;仓库&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Cyberlisa.github.io&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Owner&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Cyberlisa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;填完后点击【保存】——&amp;gt;【同步】。&lt;/p&gt;
+&lt;p&gt;稍等一会儿后，在浏览器打开域名，会看到文章底下显示“未找到相关的issues进行评论xxx”，点击【使用GitHub登陆】，进行授权。&lt;/p&gt;
+&lt;h2 id=&#34;搭建图床&#34;&gt;搭建图床&lt;/h2&gt;
+&lt;h2 id=&#34;gitee&#34;&gt;gitee&lt;/h2&gt;
+&lt;p&gt;1.注册gitee账号，https://gitee.com&lt;/p&gt;
+&lt;p&gt;2.创建仓库。&lt;/p&gt;
+&lt;p&gt;3.创建token，复制下来。&lt;/p&gt;
+&lt;h2 id=&#34;picgo&#34;&gt;picgo&lt;/h2&gt;
+&lt;p&gt;1.下载picgo，github下载慢的话，可以去网上找别人分享的（注意不要下到捆绑软件）。&lt;/p&gt;
+&lt;p&gt;2.安装node.js，网上有很多教程https://www.runoob.com/nodejs/nodejs-install-setup.html&lt;/p&gt;
+&lt;p&gt;3.打开picgo,  在插件设置中搜索gitee， 选择gitee-uploder安装。&lt;/p&gt;
+&lt;p&gt;4.安装插件后再图床设置中找到gitee， 填写gitee设置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;repo：gitee的用户名/仓库名&lt;/li&gt;
+&lt;li&gt;branch：master&lt;/li&gt;
+&lt;li&gt;token：刚刚gitee创建的token&lt;/li&gt;
+&lt;li&gt;path：仓库下的文件夹&lt;/li&gt;
+&lt;li&gt;如果没有的话会自动创建&lt;/li&gt;
+&lt;li&gt;custormPath：随便选&lt;/li&gt;
+&lt;li&gt;custormUrl：可填可不填&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;5.点击确定，会提示成功，然后在上传区点击上传图片，然后去gitee看看有没有成功。&lt;/p&gt;
+&lt;p&gt;6.其他设置：打开picgo设置，可选择显示的图床，把不用的取消打钩，以及修改上传快捷键。&lt;/p&gt;
+">github+gridea搭建个人博客</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://likasi777.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+">关于</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
+
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/media/js/mouse/fireworks.js"></script>
 
 
 
 
 
-  </body>
 </html>
